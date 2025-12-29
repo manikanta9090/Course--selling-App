@@ -16,7 +16,7 @@ app.use((err, req, res, next) => {
 });
 
 async function main() {
-    await mongoose.connect("mongodb+srv://juttumanikanta52_db_user:v40DOLfx3RZlmz78@cluster0.yqehxnx.mongodb.net/Coursera-app")
+    await mongoose.connect("")
     app.listen(3000);
     console.log("connected to MongoDB");
 }
