@@ -13,7 +13,7 @@ app.use("/api/v1/user", userRouter);
 app.use("/api/v1/admin", adminRouter);
 app.use("/api/v1/course", courseRouter);
 app.use((err, req, res, next) => {
-    console.error("🔥 Unhandled Error:", err);
+    console.error(" Unhandled Error:", err);
     res.status(500).json({ message: "Internal Server Error" });
 });
 

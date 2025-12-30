@@ -1,4 +1,5 @@
 const { Router } = require("express");
+const router = Router();
 const { userModel } = require("../db");
 const jwt = require("jsonwebtoken");
 const { JWT_USER_PASSWORD } = require("../config");
@@ -55,5 +56,5 @@ userRouter.get("/purchases", function(req, res) {
 })
 
 module.exports = {
-    userRouter: userRouter
+    userRouter: router
 }
